@@ -1,0 +1,30 @@
+<ion-view >
+  <ion-header-bar  class="bar bar-header bar-positive" style="background-image:url(img/bg.png);background-size:100% 100%;color:white;">
+   
+    <button class="button button-icon icon ion-power" style="left:0%;" ng-click="bookShelfBack();"></button>
+    <button class="button button-icon icon ion-navicon-round"  ng-click="listCallFtn();"></button>
+      <h1 class="title">Books</h1>
+      <button class="button button-clear icon-left ion-plus-circled" ng-click="bookShelfCreate();"></button>
+  </ion-header-bar >  
+  <ion-content  style="background-image:url(img/bg.png);background-size:100% 100%;color:white;">
+  
+
+  <div class="row"  ng-repeat="item1 in appKey | inSlicesOf:3 " style="background-image:url(img/BookShelfCell.png);background-size:100% 100%;color:white;"> 
+    	
+        <div class="col col-33" ng-repeat="item in item1 "  style="background-color:transparent;background-size:100% 100%;">
+
+            <img src="{{item.app_image}}" style="width:100%;height:auto;padding: 10% 3% 0% 3%" ng-click="bookShelfClickFtn(item.api_key,item.title);">
+
+            <!--<p style="width:100%;height:auto;padding: 10% 3% 0% 3%" ng-click="bookShelfClickFtn(item.api_key,item.title);">{{item.title}}</p>-->
+
+        </div>
+    </div>
+
+
+
+    <img src="img/BookShelfCell.png" style="width:100%;height:auto;">
+    <img src="img/BookShelfCell.png" style="width:100%;height:auto;">
+    <img src="img/BookShelfCell.png" style="width:100%;height:auto;">
+
+  </ion-content>
+</ion-view>

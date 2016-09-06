@@ -1,0 +1,13 @@
+<ion-view >
+  <ion-header-bar class="bar bar-header bar-positive" style="background-image:url(img/bg.png);background-size:100% 100%;color:white;">
+      <button class="button button-icon icon ion-chevron-left" ng-click="contentViewBack();"></button>
+      <h1 class="title" >{{contentTitle.title}}</h1>
+  </ion-header-bar>
+  <ion-content >
+
+    <div class="list list-inset">
+      <p align="justify" ng-bind-html="description"></p>
+     
+    </div>
+  </ion-content>
+</ion-view>

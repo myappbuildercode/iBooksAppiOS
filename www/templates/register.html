@@ -1,0 +1,36 @@
+<ion-view>
+  <ion-header-bar  class="bar bar-header bar-positive" style="background-color:#047aba;background-size:100% 100%;color:white;">
+      <button class="button button-icon icon ion-chevron-left" ng-click="registerBack();"></button>
+      <h1 class="title" style="color:white;">Register</h1>
+  </ion-header-bar>
+  <ion-content>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+         <span class="input-label" style="width:30%;">Name</span>
+        <input type="text" id="regName" placeholder="Enter Your Full Name">
+      </label>
+      
+      <label class="item item-input">
+        <span class="input-label" style="width:30%;">User Name</span>
+        <input type="text" id="regUserId" placeholder="Enter Your User Name">
+      </label>
+      <label class="item item-input">
+        <span class="input-label" style="width:30%;">Email Id</span>
+        <input type="email" id="regEmail" placeholder="Enter Your Email Id">
+      </label>
+      <label class="item item-input">
+        <span class="input-label" style="width:30%;">Password</span>
+        <input type="password" id="regPassword" placeholder="Enter Your Password">
+      </label>
+      <label class="item item-input">
+        <span class="input-label" style="width:30%;">Confirm p.. </span>
+        <input type="password" id="regConfirmPassword" placeholder="Enter Your Password Confirmation">
+      </label>
+      
+
+      <button class="button button-full" ng-click="registerPageSubmitFtn();" style="background-color:#d6dbe6;background-size:100% 100%;">Register</button>
+     
+    </div>
+  </ion-content>
+</ion-view>
